@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppAngularPIK", "WebAppAngularPIK\WebAppAngularPIK.csproj", "{C6A33754-35BA-4EA4-A14C-34CFB33F256D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServicePIK", "WcfServicePIK\WcfServicePIK\WcfServicePIK.csproj", "{333C3CC0-1D77-48C8-A662-379E30A7A8C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6A33754-35BA-4EA4-A14C-34CFB33F256D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A33754-35BA-4EA4-A14C-34CFB33F256D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A33754-35BA-4EA4-A14C-34CFB33F256D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A33754-35BA-4EA4-A14C-34CFB33F256D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333C3CC0-1D77-48C8-A662-379E30A7A8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333C3CC0-1D77-48C8-A662-379E30A7A8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333C3CC0-1D77-48C8-A662-379E30A7A8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333C3CC0-1D77-48C8-A662-379E30A7A8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {277F0289-9EC0-45B9-AED6-D72FC6CEC392}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,71 @@
+<div class="container" style="width:390px;">
+  <form name="form" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="row">
+      <div class="col align-self-center">
+        <input type="text" placeholder="Логин" id="inputLogin" formControlName="login" />
+        <div *ngIf="form.get('login').invalid && form.get('login').touched" class="validation">
+          <small *ngIf="form.get('login').errors.required">
+            Логин не может быть пустым
+          </small>
+          <small *ngIf="form.get('login').errors.pattern  && !form.get('login').errors.maxlength">
+            Использовать только латиницу и цифры
+          </small>
+          <small *ngIf="form.get('login').errors.maxlength">
+            Максимальная длина логина - {{form.get('login').errors.maxlength.requiredLength}} символов <br>
+            Вы ввели на {{form.get('login').errors.maxlength.actualLength - form.get('login').errors.maxlength.requiredLength }} больше!
+          </small>
+          <!--<pre>{{form.get('login').errors | json}}</pre>-->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col align-self-center">
+        <input type="text" placeholder="Фамилия" id="inputSurname" name="inputLastName" formControlName="lastName" />
+        <div *ngIf="form.get('lastName').invalid && form.get('lastName').touched" class="validation">
+          <small *ngIf="form.get('lastName').errors.required">
+            Укажите фамилию
+          </small>
+          <small *ngIf="form.get('lastName').errors.pattern && !form.get('lastName').errors.maxlength">
+            Первая буква заглавная, остальные - нет.
+            <br>Использовать буквы кириллицы.
+          </small>
+          <small *ngIf="form.get('lastName').errors.maxlength">
+            Максимальная длина логина - {{form.get('lastName').errors.maxlength.requiredLength}} символов <br>
+            Вы ввели на {{form.get('lastName').errors.maxlength.actualLength - form.get('lastName').errors.maxlength.requiredLength }} больше!
+          </small>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col align-self-center">
+        <input type="text" placeholder="Имя" id="inputFirstName" name="inputFirstName" formControlName="firstName" />
+        <div *ngIf="form.get('firstName').invalid && form.get('firstName').touched" class="validation">
+          <small *ngIf="form.get('firstName').errors.required">
+            Укажите фамилию
+          </small>
+          <small *ngIf="form.get('firstName').errors.pattern && !form.get('firstName').errors.maxlength">
+            Первая буква заглавная, остальные - нет.
+            <br>Использовать буквы кириллицы.
+          </small>
+          <small *ngIf="form.get('firstName').errors.maxlength">
+            Максимальная длина логина - {{form.get('firstName').errors.maxlength.requiredLength}} символов <br>
+            Вы ввели на {{form.get('firstName').errors.maxlength.actualLength - form.get('firstName').errors.maxlength.requiredLength }} больше!
+          </small>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col align-self-center">
+        <button class="buttonForm" type="submit" [disabled]="form.invalid">Отправить</button><!---->
+      </div>
+    </div>
+    <span *ngIf="LoginValidate.Success != null">
+      Вы успешно зарегистрировались!
+    </span>
+    <span *ngFor="let error of LoginValidate.Errors">
+      {{error}}
+    </span>
+  </form>
+  
+</div>

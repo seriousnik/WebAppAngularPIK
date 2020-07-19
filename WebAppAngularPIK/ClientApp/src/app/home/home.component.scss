@@ -1,0 +1,112 @@
+body {
+  font-family: Graphik,sans-serif !important;
+}
+
+form {
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 2px solid #DCDCDC;
+  padding: 32px;
+}
+
+input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  color: rgb(77, 77, 77);
+  letter-spacing: 0px;
+  font-size: 14px;
+  height: 48px;
+  box-shadow: none;
+  background-color: rgb(242, 244, 247);
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  transition-property: all;
+  -webkit-appearance: none;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 4px;
+  padding: 26px 40px 10px 12px;
+  margin-top: 16px;
+}
+
+button.buttonForm {
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  font-family: Graphik;
+  display: inline-flex;
+  box-sizing: border-box;
+  user-select: none;
+  white-space: nowrap;
+  min-width: 160px;
+  height: 56px;
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: bold;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-property: background;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  flex-flow: row nowrap;
+  padding: 0px 16px;
+  text-decoration: none;
+  background: rgb(255, 65, 20);
+  border-radius: 4px;
+}
+
+button.buttonForm:hover {
+  background: rgb(247, 47, 0);
+}
+
+button.buttonForm[disabled] {
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  font-family: Graphik;
+  display: inline-flex;
+  box-sizing: border-box;
+  user-select: none;
+  white-space: nowrap;
+  min-width: 160px;
+  height: 56px;
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: 500;
+  color: rgb(204, 204, 204);
+  width: 100%;
+  flex-flow: row nowrap;
+  padding: 0px 16px;
+  text-decoration: none;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(234, 234, 234);
+  border-image: initial;
+  border-radius: 4px;
+}
+
+span.spTooltiptext {
+  position: absolute;
+  z-index: 1;
+  background-color: #808080;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.validation {
+  /*position: absolute;
+  z-index: 1;*/
+  /*background-color: #808080;*/
+  color: #ff0000;
+  /*text-align: center;
+  border-radius: 6px;*/
+}
